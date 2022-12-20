@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="header">
+            <div class="div">
+                <h1>Calculator</h1>
+            </div>
+            <input type="text" placeholder="0" id="display">
+        </div>
+        <div class="mainbody">
+            <div class="row px-3 mt-2">
+                <div class="col-3 mx-0 px-1">
+                    <input type="button" name="" id="" value="C" class="color2" onclick="calculate(this.value)" >
+                </div>
+                <div class="col-3 px-1"> <!--  onclick="display.value = Math.sqrt(display.value)"  -->
+                    <input type="button" name="" id="" value="√" onclick="display.value = Math.sqrt(display.value)" >
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="%" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" class="color1" id="" value="/" onclick="calculate(this.value)">
+                </div>
+            </div><!--/row-->
+            <div class="row px-3 mt-2">
+                <div class="col-3 mx-0 px-1">
+                    <input type="button" name="" id="" value="7" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="8" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="9" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="*" class="color1" id="" value="X" onclick="calculate(this.name)">
+                </div>
+            </div><!--/row-->
+            <div class="row px-3 mt-2">
+                <div class="col-3 mx-0 px-1">
+                    <input type="button" name="" id="" value="4" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="5" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="6" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" class="color1" id="" value="-" onclick="calculate(this.value)">
+                </div>
+            </div><!--/row-->
+            <div class="row px-3 mt-2">
+                <div class="col-3 mx-0 px-1">
+                    <input type="button" name="" id="" value="1" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="2" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="3" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" class="color1" id="" value="+" onclick="calculate(this.value)">
+                </div>
+            </div><!--/row-->
+            <div class="row px-3 mt-2">
+                <div class="col-3 mx-0 px-1">
+                    <input type="button" name="" id="" value="0" onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="." onclick="calculate(this.value)">
+                </div>
+                <div class="col-3 px-1">
+                    <input type="button" name="" id="" value="DEL" onclick="display.value = display.value.slice(0,-1)">
+                </div>
+                <div class="col-3 px-1 ">
+                    <input type="button" class="color1" name="" id="" value="=" onclick="calculate(this.value)">
+                </div>
+            </div><!--/row-->
+        </div>
+        <div class="footer">
+            <p class=" ">
+                &copy; By Din Md Ashraf
+            </p>
+        </div>
+    </div><!--/wrapper-->
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+</html>
